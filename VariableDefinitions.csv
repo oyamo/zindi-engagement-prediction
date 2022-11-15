@@ -1,0 +1,63 @@
+VariableName,VariableDefinition
+Comments,
+UserID,This is the unique ID of the user who made the comment
+CommentDate Year,The year the comment was made in. Years are in chronological order
+CommentDate Month,The month of the year the comment was made in. Months are in chronological order but January is not neccesarily month 1. 
+CommentDate Day_of_week,The day of the week the comment was made on. Days are in chronological order but Monday is not neccesarily day 1.
+,
+Competitions,
+Country,Country competition host is from or where hackathon is being hosted. This field is masked in the same way Country is masked in the User table. 
+FeatureA,A category the competition falls into. This field is masked. 
+CompID,This is the ID of the competition or hackathon
+FeatureB,A category the competition falls into. This field is masked.
+FeatureC,A category the competition falls into. This field is masked.
+Kind,This indicates if the competition is a hackathon or competition
+Points Reward,"This is the points award for the competition or hackathon, please note that these values have been scaled. "
+FeatureD,A category the competition falls into. This field is masked.
+SecretCode,Indicates if a hackathon has a secret code
+SubmissionLimitPerDay,Number of submissions per day limit per competition
+FeatureE,A category the competition falls into. This field is masked.
+CompEndTime Year        ,The year the competition ended in. Years are in chronological order
+CompEndTime Month        ,The month of the year the competition ended in. Months are in chronological order but January is not neccesarily month 1.
+CompEndTime Day_of_week        ,The day of the week the competition ended on. Days are in chronological order but Monday is not neccesarily day 1.
+CompStartTime Year        ,The year the competition started in. Years are in chronological order
+CompStartTime Month       ,The month of the year the competition started in. Months are in chronological order but January is not neccesarily month 1.
+CompStartTime Day_of_week        ,The day of the week the competition started on. Days are in chronological order but Monday is not neccesarily day 1.
+,
+CompetitionParticipation,
+UserID,This is the unique ID of the user who enrolled in a specific CompID
+PublicRank,This variable is split into groups. Users are grouped together in groups of 50.  Rank 1 does not neccesarily mean the users who are top 50 on the leaderboard. This field is masked. 
+Successful Submission Count,This variable is split into groups. Number of submissions are grouped in groups of 10. Count 3 does not neccesarily mean that users with count 3 made 30-40 submissions. This field is masked. 
+CompPartCreated Year        ,The year the user enrolled in the competition. Years are in chronological order
+CompPartCreated Month       ,The month of the year the user enrolled in a competition. Months are in chronological order but January is not neccesarily month 1. 
+CompPartCreated Day_of_week,The day of the week the user enrolled in a competition on. Days are in chronological order but Monday is not neccesarily day 1.
+,
+Discussions,
+DiscID,"The unique ID for each discussion, the comments table can be merged on this feature"
+FeatureF,A category the discussion falls into. This field is masked.
+UserID,"The user who created the discussion, this can be merged with the User table on UserID"
+DiscDate Year        ,The year the discussion was created. Years are in chronological order
+DiscDate Month        ,The month of the year the discussion was made in. Months are in chronological order but January is not neccesarily month 1. 
+DiscDate Day_of_week        ,The day of the week the discussion was made on. Days are in chronological order but Monday is not neccesarily day 1.
+,
+Submissions,
+CompID,"This is the ID of the competition or hackathon, this can be used to merge with the Competition Table"
+FeatureG,A category the submission falls into. This field is masked.
+UserID,This is the unique ID of the user who made a submission
+SubDate Year,The year the submission was made. Years are in chronological order
+SubDate Month        ,The month of the year the submission was made in. Months are in chronological order but January is not neccesarily month 1. 
+"SubDate Day_of_week
+",The day of the week the submission was made on. Days are in chronological order but Monday is not neccesarily day 1.
+,
+Users,
+FeatureX,A category the user falls into. This field is masked.
+Country,Country user is from. This field is masked in the same way Country is masked in the Competition table. 
+FeatureY,A category the user falls into. This field is masked.
+UserID,"Unique user ID, this feature can be used to merge onto the discussion, comments and submission table"
+Points,This variable is split into grouped. Users are grouped together based on similiar points.  Rank 1 does not neccesarily mean the users who have the most points. This field is masked. 
+UserDate Year        ,The year the user signed up for Zindi. Years are in chronological order
+UserDate Month        ,The month of the year the user signed up. Months are in chronological order but January is not neccesarily month 1. 
+UserDate Day_of_week        ,The day of the week the user signed up on. Days are in chronological order but Monday is not neccesarily day 1.
+,
+,
+The variables have been masked consistently across all tables. ,
